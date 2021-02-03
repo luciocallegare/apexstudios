@@ -3,7 +3,9 @@
 	padding: 0px;
 }
 
-
+nav{
+	z-index: 1;
+}
 
 
 header h1{
