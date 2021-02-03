@@ -1,0 +1,302 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+header h1{
+	text-align: center;
+	margin: 0px;
+	color: #F6EFEF;
+	font-size: 50px;
+}
+header h2{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 30px;
+}
+
+
+
+header{
+	height: 94vh;
+	background-image:url(./img/header2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0px;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #F1EAEA;
+}
+
+
+article h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+article p{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+article h3{
+	margin-top: 19px;
+	margin-bottom: 19px;
+}
+#personal{
+	margin-bottom: 180px;
+}
+a.menu:link,a.menu:visited{
+	color: white;
+	text-decoration: none;
+}
+a.menu:hover{
+	text-decoration: overline;
+}
+body{
+	font-family: arial;                   /*a todo*/
+}
+
+section{                                                            
+	margin: auto;
+	width: 75%;
+	text-align: center;
+	color: #1C1C1C;
+}
+.face{
+	display: inline;
+	background-color: #AFAFAF;
+}
+
+footer{
+	margin-top: 20px;
+	overflow: auto;
+	background-color: #AFAFAF;
+}
+footer h4{
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+#personal{
+	overflow: auto;
+}
+#personal h2{
+	margin-bottom: 50px;
+}
+#personal img{
+	width: 235px;
+	height: 170px;
+	display: block;
+	margin: auto;
+}
+
+#intro{
+	overflow: auto;
+	margin-top: 20px;
+}
+
+#intro .texto{
+	width: 70%;
+	padding-left: 20px;
+	margin-left: 20px;
+}
+#intro .imagen{
+	width: 30%;
+	float: right;
+	margin-top: 5.4%;
+}
+#intro img{
+	width: 100%;
+	margin-bottom: 100px;
+}
+#intro .texto p{
+	margin-bottom: 90px;
+}
+
+a{
+	text-decoration-line: none;
+	color: #C04747;
+}
+a:hover{
+	text-decoration-line: overline;
+}
+#presupuestos ul, #academy ul{
+	text-align: left;
+	margin-top: 20px;
+}
+
+#academy h4{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#academy audio{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+h2{
+	font-size: 35px;
+}
+#presupuestos li, #academy li{
+	margin-top: 20px;
+}
+
+.ultimo{
+	margin-bottom: 20px;
+}
+.mail{
+	margin-left: 10px;
+}
+article{
+	padding-top: 50px;
+}
+
+
+.toggle-button{
+	position: absolute;
+	top: .10rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 31px;
+	height: 21px;
+}
+
+.toggle-button .bar{
+	height: 5px;
+	width: 100%;
+	background-color:#FFFFFF;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 1223px){
+
+	header{
+		background-size: initial;
+		background-attachment: initial;
+	}
+
+	.toggle-button{
+		display: flex;
+	}
+	nav .lista{
+		display: none;
+	}
+	#intro .imagen{
+		width: 100%;
+		float: none;
+		margin-top: 50px;
+	}
+	#intro img{
+		width: 100%;
+		margin-bottom: 100px;
+	}
+
+	#presupuestos ul, #academy ul{
+		text-align: left;
+		margin-top: 20px;
+		margin-left: 40px
+	}
+	#intro .imagen{
+		display: none;
+	}
+	#academy img{
+		/*opacity: 60%;*/
+		width: 100%;
+	}
+	header h1{
+		padding-top: 150px;
+	}
+	textarea, input, select {
+	  width: 100%; /* extend the width of the grid item */
+	  box-sizing: border-box; /* including padding / border in width */
+	}
+	h2{
+		font-size: 30px
+	}
+	#intro{
+		margin-left: 30px;
+	}
+	#intro .texto p{
+		font-size: 15px;
+		text-align: left;
+		line-height: 20px;
+	}
+	#intro .texto h3{
+		font-size: 20px;
+	}
+	nav{
+		background-color: #D54040;
+		margin-top: 0;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		position: -webkit-sticky;
+	  	position: sticky;
+	  	top: 0;
+	}
+	nav ul li{
+		text-align: left;
+		padding-top: 20px;
+		padding-left: 5px;
+	}
+	nav ul li a{
+		display: block;
+    	text-decoration: none;
+    	color: white;
+    	padding-right: 16px;
+	}
+	nav .lista.active{
+		display: block;
+	}
+	nav .toggle-button:hover{
+		cursor: pointer;
+	}
+}
+
+@media only screen and (min-width: 1224px){
+	header h1{
+		padding-top: 260px;
+	}
+	#academy ul{
+		margin-left: 400px;
+	}
+	#presupuestos ul{
+		margin-left: 300px;
+	}
+	.izq{
+		margin-left: 175px;
+		float:left;
+	}
+
+	nav{
+		background-color: #D54040;
+		margin-top: 0;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		position: -webkit-sticky;
+	  	position: sticky;
+	  	top: 0;
+	}
+	nav ul{
+		display: flex;
+		margin:0;
+		padding: 0;
+	}
+	nav li{
+		list-style: none;
+		padding-left: 10%;
+	}
+	nav .lista{
+		margin:auto;
+		margin-left: 5%;
+	}
+	.nombre,.teldir,.horario{
+		float: left;
+		margin-left: 225px;
+	}
+}
+
+
+
